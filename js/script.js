@@ -1,14 +1,16 @@
-// Initialize Swiper Carousel for Offers Section
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.swiper-container',{
     loop: true,
     autoplay: {
-        delay: 3000,
+        delay: 5000,
         disableOnInteraction: false,
     },
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
+
     },
+    spaceBetween:200,
+    speed:1000,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
