@@ -23,29 +23,55 @@ body {
 
 /*------------------------------------------------------------ Header ----------------------------------------------------------*/
 header {
-    background: rgb(255, 104, 23);
+    position: relative;
+    background: #ff6a1a;
     width: 100%;
     height: 120px;
     color: #fff;
-    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 20px 0; */
 }
 
 .navbar {
+    width: 100%;
+    /* background: #75829e; */
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 10px;
 }
 
 header h1 {
-    float: left;
-    margin-left: 20px;
+    
     font-family: POPPINS;
 }
-
-nav {
-    float: right;
-    margin-right: 20px;
+.logotext{
+    display: flex;
+    line-height: 1;
+    flex-direction: column;
+    align-items: center ;
 }
+#logo_small_text{
+    font-size: 12px;
+    font-family: POPPINS LIGHT;
+    align-self: flex-start;
+    letter-spacing: 2.3PX;
+    margin-left: 8PX;
+    
+}
+.logo_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{  
+   margin-top: 4PX;
+    width: 40px;
+
+}
+
 
 nav ul {
     list-style: none;
@@ -70,7 +96,7 @@ nav ul li a:hover {
 }
 
 nav ul li a:active {
-    color: #e67e22;
+    color: #222222;
 
 }
 
@@ -310,17 +336,20 @@ header::after {
 /*-------------------------------------------------------------------------- Partners -----------------------------------------------------*/
 .partner-logos {
     display: flex;
+    gap:20px;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .partner-logos a {
     margin: 10px;
+
 }
 
 .partner-logos img {
-    width: 150px;
-    filter: grayscale(100%);
+    width: 100px;
+        /* filter: grayscale(100%); */
+        /* background: #bc1818; */
     transition: filter 0.3s;
 }
 

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./stylesheets/contact-style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: Arial, sans-serif;
+    background: black;
+
+}
+
+.bg-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgb(255, 104, 23);
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.contact-info-item {
+    flex: 1;
+    text-align: center;
+}
+
+.contact-form {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.input-box {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: rgb(255, 104, 23);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(255, 104, 23);
+}
+</style>
+</head>
+
+
+<body>
+    <div class="bg-container">
+    <div class="contact-container">
+        <div class="contact-info">
+            <div class="contact-info-item">
+                <i class="fas fa-home"></i>
+                <p>4671 Sugar Camp Road,<br/>Owatonna, Minnesota, 55060</p>
+            </div>
+            <div class="contact-info-item">
+                <i class="fas fa-phone"></i>
+                <p>571-457-2321</p>
+            </div>
+            <div class="contact-info-item">
+                <i class="fas fa-envelope"></i>
+                <p>ntamerrwael@mfano.ga</p>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form action="mailto:saundharman9@gmail.com"
+            method="POST"
+            enctype="multipart/form-data"
+            name="EmailForm" id="contact-form">
+                <h2>Send Message</h2>
+                <div class="input-box">
+                    <span>Full Name</span>
+                    <input type="text" required name="full_name">
+                </div>
+                <div class="input-box">
+                    <span>Email</span>
+                    <input type="email" required name="email">
+                </div>
+                <div class="input-box">
+                    <span>Type your Message...</span>
+                    <textarea required name="message"></textarea>
+                </div>
+                <div class="input-box">
+                    <input type="submit" value="Send">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
