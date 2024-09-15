@@ -6,30 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TANDOORI RASOI</title>
     <!-- CSS -->
-
     <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- font awsome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- flaticon cdn -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+
+    <!-- swiper css cdn  -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  
+    
 </head>
 
 <body>
-    <!-- Header -->
+    <!--================================================ Header ============================================================-->
     <header>
         <!-- <div class="container "> -->
-            
-            <nav class="navbar">
-                <div class="logo_container">
-                    <img src="images/logo-3.png" alt="TandooriRasoi & sweets logo" class="logo">
-               <div class="logotext">
-                <h1>TANDOORI</h1>
-                <h1 id="logo_small_text">RASOI & SWEETS</h1>
-               </div>
+
+        <nav class="navbar">
+            <div class="logo_container">
+                <img src="images/logo-3.png" alt="TandooriRasoi & sweets logo" class="logo">
+                <div class="logotext">
+                    <h1>TANDOORI</h1>
+                    <h1 id="logo_small_text">RASOI & SWEETS</h1>
                 </div>
-                <div id="navbar-links">
-                <i class="fa-solid fa-xmark" onclick="hideMenu()" id="fa"></i>  <!-- close icon--> 
+            </div>
+            <div id="navbar-links">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()" id="fa"></i> <!-- close icon-->
                 <ul>
                     <li><a href="#menu">Menu</a></li>
                     <li><a href="#offers">Offers</a></li>
@@ -38,13 +45,15 @@
                     <li><a href="#service">Service</a></li>
                     <li><a href="#partners">Partners</a></li>
                 </ul>
-                </div>
-                <i class="fa-solid fa-bars" onclick="showMenu()" id="fa" ></i> <!-- menu icon-->
-            </nav>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()" id="fa"></i> <!-- menu icon-->
+        </nav>
         <!-- </div> -->
     </header>
 
-    <!-- Hero Section -->
+
+    <!--================================================ Hero Section ============================================================-->
+
     <section class="hero">
 
         <div class="swiper mySwiper swiper-container">
@@ -62,7 +71,8 @@
 
     </section>
 
-    <!-- Menu Section -->
+    <!--================================================ Menu Section ============================================================-->
+
     <section id="menu" class="section">
         <div class="container">
             <h2>Popular Dishes</h2>
@@ -88,8 +98,8 @@
             </div>
         </div>
     </section>
+    <!--================================================ OFFER SECTION ============================================================-->
 
-    <!-- Offers Section -->
     <section id="offers" class="section offers">
         <div class="container">
             <h2>Special Offers</h2>
@@ -107,7 +117,8 @@
             </div>
         </div>
     </section>
-    <!-- ---------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- =========================================================================================================================================================== -->
     <!-- Popular Dishes Section -->
     <!-- <section id="popular" class="section popular">
         <div class="container">
@@ -123,7 +134,10 @@
     <!-- </div> -->
     <!-- </div> -->
     <!-- </section> -->
-    <!-- -------------------------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- =========================================================================================================================================================== -->
+
+    <!--================================================ FUN-FACTOR ============================================================-->
+
     <section id="fun_factor" class="section ">
 
         <div class="bg">
@@ -131,36 +145,49 @@
 
         </div>
         <div class="funfactor-content">
-           <div class="dishes-wrapper">
-            <div class="dishes">
-                <i class="fa-solid fa-utensils"></i>
-                <h2>40</h2>
-                <p>MENU ITEMS</p>
+            <div class="dishes-wrapper">
+                <div class="dishes">
+                    <i class="fa-solid fa-utensils"></i>
+                    <h2>40</h2>
+                    <p>MENU ITEMS</p>
 
-            </div>
-            <!-- ----------dishes only for same class properties but its users --------------------------------- -->
-            <div class="dishes">
-                <i class="fa-solid fa-users"></i>
-                <h2>1000</h2>
-                <p>CUSTOMERS</p>
+                </div>
+                <!-- ----------dishes only for same class properties but its users --------------------------------- -->
+                <div class="dishes">
+                    <i class="fa-solid fa-users"></i>
+                    <h2>1000</h2>
+                    <p>CUSTOMERS</p>
 
-            </div>
-            <div class="dishes">
-                <i class="fi fi-ss-hat-chef" STYLE="font-size: 40PX;"></i>
-                <h2>10</h2>
-                <p>CHEFS</p>
+                </div>
+                <div class="dishes">
+                    <i class="fi fi-ss-hat-chef" STYLE="font-size: 40PX;"></i>
+                    <h2>10</h2>
+                    <p>CHEFS</p>
 
-            </div>
-            <div class="dishes">
-                <i class="fa-solid fa-heart"></i>
-                <h2>100</h2>
-                <p>%SATISFACTION</p>
+                </div>
+                <div class="dishes">
+                    <i class="fa-solid fa-heart"></i>
+                    <h2>100</h2>
+                    <p>%SATISFACTION</p>
 
+                </div>
             </div>
-           </div>
         </div>
     </section>
-    <!-- Location Section -->
+
+    <!--================================================ CATTERING/ BHAJJI SECTION ============================================================-->
+    <section id="cattering-bhajji" class="section cattering-bhajji">
+        <div class="cattering">
+            <div class="cards"></div>
+            <div class="cards"></div>
+            <div class="cards"></div>
+        </div>
+
+    </section>
+
+    <!--================================================ CONTACTUS  Section ============================================================-->
+
+
     <section id="location" class="section location">
         <div class="container location-container">
             <h2>Our Location</h2>
@@ -176,8 +203,9 @@
         </div>
     </section>
 
+    <!--================================================ Online Partners Section ============================================================-->
 
-    <!-- Online Partners Section -->
+
     <section id="partners" class="section partners">
         <div class="container">
             <h2>Order Online</h2>
@@ -190,7 +218,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!--================================================ Footer ============================================================-->
     <footer>
         <div class="container">
             <p>&copy; 2024 TANDOORI RASOI. All rights reserved.</p>
@@ -204,7 +232,7 @@
 
     <!-- JavaScript -->
     <!-- Swiper JS -->
-     
+
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
