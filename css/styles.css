@@ -42,7 +42,16 @@ header {
     justify-content: space-around;
     padding: 10px;
 }
+#navbar-links {
+/* flex: 1; */
+    text-align: right;
+text-decoration: none;
+/* background: #760dc7; */
+}
 
+#fa{
+    display: none;
+}
 header h1 {
     
     font-family: POPPINS;
@@ -105,6 +114,42 @@ header::after {
     display: block;
     clear: both;
 }
+
+
+/* ------------------------------------------------------------NAV RESPONSIVE START------------------------------------------------------------------*/
+@media screen and (max-width: 768px){
+    #navbar-links ul li{
+        display: block;
+    }
+    #navbar-links{
+        position: fixed;
+        background: #000000f0;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right:-200px;
+        z-index: 999;
+        text-align: left;
+    transition: 1s;   
+        box-shadow: 0 0 10px rgba(0, 0,0,.4
+);}
+#fa{
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;    
+}
+
+
+nav ul li a:hover {
+    color: #ff6a1a;
+
+}
+}
+/* ------------------------------------------------------------ NAV RESPONSIVE END ------------------------------------------------------------------*/
+
+
 
 /*------------------------------------------------------------- Hero Section--------------------------------------------------- */
 .hero {

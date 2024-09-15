@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  
 </head>
 
 <body>
@@ -27,6 +28,8 @@
                 <h1 id="logo_small_text">RASOI & SWEETS</h1>
                </div>
                 </div>
+                <div id="navbar-links">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()" id="fa"></i>  <!-- close icon--> 
                 <ul>
                     <li><a href="#menu">Menu</a></li>
                     <li><a href="#offers">Offers</a></li>
@@ -35,6 +38,8 @@
                     <li><a href="#service">Service</a></li>
                     <li><a href="#partners">Partners</a></li>
                 </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()" id="fa" ></i> <!-- menu icon-->
             </nav>
         <!-- </div> -->
     </header>
@@ -199,6 +204,7 @@
 
     <!-- JavaScript -->
     <!-- Swiper JS -->
+     
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="

@@ -1,3 +1,28 @@
+
+// ======================================================nav responsive start =====================================================================
+var navLinks =document.getElementById("navbar-links");
+
+function showMenu(){
+    navLinks.style.right="0";
+}
+function hideMenu(){
+    navLinks.style.right="-200px"
+}
+// ======================================================nav responsive end =====================================================================
+
+
+
+
+// ========================================================locomotive scroll start===============================================================================
+
+
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true
+});
+
+
+// ========================================================locomotive scroll end  ===============================================================================
 const swiper = new Swiper('.swiper-container',{
     loop: true,
     autoplay: {
